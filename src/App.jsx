@@ -12,6 +12,7 @@ export function App() {
 
   const newBackgroundColor = `hsl(${hue},${saturation}%,${light}%)`
   const newStyle = { backgroundColor: newBackgroundColor }
+  const newTextColor = { color: newBackgroundColor }
 
   function handleHueChange(event) {
     setHue(event.target.value)
@@ -33,7 +34,7 @@ export function App() {
 
   return (
     <>
-      <h1>Functional Color Picker!</h1>
+      <h1 style={newTextColor}>Functional Color Picker!</h1>
       <div className="Picker">
         <div className="Color">
           <div className="ColorTitle">Color</div>
